@@ -38,10 +38,9 @@ public class Student extends Person {
     }
     @Override
     public String toString() {
-        return "[Person[name = " + getName() + " ,address= " + getAddress() + "]" +
-                " ,program = " + getProgram() + " ,year= " + getYear() + " ," +
-                " fee = " + getFee() + "]";
+        return super.toString() + "[program=" + program + ", year=" + year + ", fee=" + fee + "]";
     }
+
 
 
 }
